@@ -47,55 +47,6 @@ pinned: false
 
 ## 🚀 セットアップ方法
 
-### Hugging Face Spacesでの実行（推奨）
-
-Hugging Face Spacesでは、セッション管理サーバーが自動的に起動されます。
-
-#### 自動起動機能
-- アプリケーション起動時にFastAPIサーバーが自動で起動
-- セッション管理機能が完全に利用可能
-- Cookie-based認証によるセキュアなセッション管理
-
-#### 環境変数設定
-Hugging Face Spacesの設定で以下の環境変数を設定してください：
-
-```
-TOGETHER_API_KEY=your_together_api_key_here
-GROQ_API_KEY=your_groq_api_key_here
-```
-
-1. **リポジトリのインポート**
-   - このリポジトリをHugging Face Spacesにインポート
-   - または[デモサイト](https://huggingface.co/spaces/your-space-name)で直接体験
-
-2. **Spaces設定**
-   - **SDK**: Streamlit
-   - **Python**: 3.10+
-   - **Hardware**: CPU Basic（2GB RAM）以上推奨
-   - **App File**: `spaces/main_app.py`
-
-3. **必須環境変数**
-   ```bash
-   TOGETHER_API_KEY=your_together_api_key_here
-   GROQ_API_KEY=your_groq_api_key_here
-   ```
-
-4. **オプション環境変数**
-   ```bash
-   # 通常モード用カスタムプロンプト
-   SYSTEM_PROMPT_MARI=your_custom_prompt_here
-   
-   # セーフティ解除モード用プロンプト
-   SYSTEM_PROMPT_URA=your_ura_mode_prompt_here
-   
-   # デバッグモード有効化
-   DEBUG_MODE=true
-   
-   # 手紙生成設定
-   MAX_DAILY_REQUESTS=5
-   BATCH_SCHEDULE_HOURS=2,3,4
-   ASYNC_LETTER_ENABLED=true
-   ```
 
 #### APIキーの取得方法
 
@@ -109,10 +60,8 @@ GROQ_API_KEY=your_groq_api_key_here
    - アカウント作成・ログイン
    - APIキーを生成
 
-3. **Hugging Face Spaces設定**
-   - Hugging Face Spacesの「Settings」→「Variables and secrets」で設定
 
-### ローカル環境での実行
+### ローカル環境での実行(推奨）
 
 1. **リポジトリをクローン**
    ```bash
